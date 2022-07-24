@@ -1,0 +1,119 @@
+.theme--light.v-application {
+    background: transparent !important;
+}
+
+/* Full screen background */
+#bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+}
+
+#bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.main-section {
+     margin: 10vh 4vh 4vh 20vh;
+     max-width: 650px;
+ }
+.main-section-mobile {
+    margin: 2vh 2vh 2vh 2vh;
+}
+p, li{
+    font: 13px/21px Arial, sans-serif
+}
+
+.no-top-padding{
+    padding: 0 50px 50px 50px;
+}
+
+.white-bg{
+    background: white;
+}
+
+.contact-href-buttons{
+    margin: auto;
+    background:url("../images/cellphone.jpg") center no-repeat;
+    transition: all 1s ease;
+    background-size:100%;
+}
+
+.contact-href-buttons:hover {
+    background-size:120%;
+}
+
+/* mini nav bar */
+.menu {
+    padding-top: 15px;
+    padding-left: 50px !important;
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.menu li{
+    display: inline;
+    border-right: #ccc solid thin;
+    padding: 5px;
+    font-size: .75rem!important;
+    text-transform: uppercase;
+    font-family: Roboto,sans-serif!important;
+
+}
+
+.menu li:last-child{
+    border-right: none;
+}
+.nav-button{
+    cursor: pointer;
+}
+
+footer {
+    background: transparent !important;
+    color: white;
+    font-size: .6rem!important;
+    font-weight: 500;
+    letter-spacing: .1666666667em!important;
+    line-height: 1rem;
+    text-transform: uppercase;
+    font-family: Roboto,sans-serif!important;
+    padding-top: 10px;
+}
+
+.card-title{
+    word-break: break-word;
+    text-align: center;
+    color: #272727;
+}
+
+.intro-title{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ul{
+    padding-left: 50px !important;
+}
+
+.top-bot-padding{
+    padding: 50px 0px;
+}
+.left-right-padding{
+    padding: 20px 50px;
+}
+video{
+    outline: 0px;
+    width: 100% !important;
+    height: auto !important;
+}
