@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Practice Areas</title>
+</head>
+<style>
+    .nav-button:hover{
+        background: url('images/bgxx.jpg') no-repeat bottom fixed !important;
+        color: white;
+        font-weight: bold !important;
+        font-size: 100% !important;
+        transition: all 200ms !important;
+    }
+
+</style>
+<body>
+<div id="practice-areas":class="mobile===false? 'main-section' : 'main-section-mobile'" >
+    <v-app>
+        <v-main>
+            <v-img src="images/logos/logo-with-number.png" class="animate__animated animate__fadeInLeft"></v-img>
+            <template>
+                <v-img src="images/logos/practice-areas-title.png"></v-img>
+                <div class="white-bg" style="padding-bottom: 20px">
+                    <ul class="menu">
+                        <li class="nav-button" v-for="(item, i) in more" :key=i  @click="goToPage(item.id)">
+                            {{item.value}}
+                        </li>
+                    </ul>
+                </div>
+            </template>
+            <v-img src="images/practice-areas.jpg"></v-img>
+            <div class="white-bg left-right-padding" style="text-align: center">
+                <br>
+                <p>Being involved in a family law case is difficult and stressful. This is a time when you need a capable, knowledgeable and empathetic lawyer who can guide you and give you counsel that you can rely upon. I am that lawyer.<br><br>Don’t wait to take action. Our goal is to help you with your legal issues. Whatever legal challenges you are facing, we can help!</p>
+            </div>
+            <v-img src="images/legal-issues.jpg"></v-img>
+            <div class="white-bg left-right-padding" style="text-align: center">
+                <p>If you or your family are experiencing a legal problem such as custody, divorce, or child apprehension proceedings please reach out to us to receive the legal help that you need.</p>
+                <p><strong>Please contact us today at {{contactInfo.phoneNumber.val}}. </strong></p>
+            </div>
+            <v-parallax
+                    class="lighten-image"
+                    height="600"
+                    :src="'images/bg.jpeg'">
+                <div class="no-top-padding">
+                    <br>
+                    <v-responsive>
+                        <v-lazy :options="{threshold: 1}" transition="scale-transition">
+                            <h1 class="text-center">Resources</h1>
+                        </v-lazy>
+                        <br>
+                    </v-responsive>
+                    <div class="text-center">
+                        <v-responsive>
+                            <v-lazy :options="{threshold: .9}"
+                                    transition="fade-transition">
+                                <div>
+                                    <v-btn class="animate__animated animate__slideInLeft" Large color="#e99c46" href="http://ontariocourtforms.on.ca/en/family-law-rules-forms/" target="_blank">Family Law Forms</v-btn>
+                                    <v-btn class="animate__animated animate__slideInRight" large color="#e99c46" href="https://www.mysupportcalculator.ca/" target="_blank">Spousal Support Calculator</v-btn>
+                                </div>
+                            </v-lazy>
+                        </v-responsive>
+                    </div>
+                    <br>
+                    <template>
+                        <v-card class="mx-auto">
+                            <v-list>
+                                <v-list-item-group>
+                                    <v-list-item
+                                            v-for="(item, i) in resources"
+                                            :key="i"
+                                            @click="downloadItem(item.link)">
+                                        <v-list-item-content>
+                                            <v-list-item-title v-text="item.title"></v-list-item-title>
+                                        </v-list-item-content>
+                                        <v-list-item-action>
+                                           <v-icon>mdi-download-outline</v-icon>
+                                        </v-list-item-action>
+                                    </v-list-item>
+                                </v-list-item-group>
+                            </v-list>
+                        </v-card>
+                    </template>
+                </div>
+            </v-parallax>
+            <div class="white-bg no-top-padding">
+                <br>
+                <v-responsive>
+                    <v-lazy :options="{threshold: .9}" transition="scale-transition">
+                        <h2> Children's Aid Society Cases </h2>
+                    </v-lazy>
+                </v-responsive>
+                <br>
+                <p>Amid Family Legal issues, the safety, health and well-being of children at home is sometimes compromised. In many cases, it is necessary to legally intervene and protect a child or children. Assistance to the family is also provided to help make the home a safe and nurturing environment for the children. Child Protection Laws in Ontario are designed to take children away from dangerous situations. In addition, families can obtain access to practical resources covering the areas of counseling, parenting classes, housing and drug or alcohol dependency treatment.</p>
+                <p>Our goal is to protect your children from danger and ensure that they are well cared for and are safe. We provide legal advice and knowledge to help educate Child Protective Agencies and Parents, familiarizing them with the laws advocating for the safety and well-being of children in the GTA. We can also help Parents obtain necessary resources to help create a nurturing and safe environment for the entire family. If you are a Child Protection Agent, a concerned Parent or have any questions regarding Child Protection Laws in the GTA, and other areas across Ontario.</p>
+            </div>
+            <div class="white-bg">
+                <video  controls src="images/law-video-revised.mp4"></video>
+            </div>
+            <div class="white-bg" >
+                <video  controls src="images/a.mp4"></video>
+            </div>
+            <div class="white-bg">
+                <video  controls src="images/a1.mp4"></video>
+            </div>
+            <div class="white-bg" >
+                <video  controls src="images/a2.mp4"></video>
+            </div>
+            <div class="white-bg">
+                <video  controls src="images/a3.mp4"></video>
+            </div>
+            <div class="white-bg" >
+                <video  controls src="images/a4.mp4"></video>
+            </div>
+           
+            <template>
+                <div class="white-bg no-top-padding" style="text-align: center">
+                    <br>
+                    <h2 class="text-center">Call us today for a free consultation</h2>
+                    <br>
+                    <v-responsive>
+                        <v-lazy :options="{threshold: .9}" transition="scale-transition">
+                            <div>
+                                <v-btn outlined color="#e99c46" fab x-large dark :href="contactInfo.phoneNumber.href">
+                                    <v-icon>mdi-phone</v-icon>
+                                </v-btn>
+                                <br>
+                                <br>
+                                <span style="font-size: 1.5rem" class="text-center">
+                                    {{contactInfo.phoneNumber.val}}
+                                </span>
+                            </div>
+                        </v-lazy>
+                    </v-responsive>
+                    <br>
+                    <br>
+                    <h2 class="text-center">We accept Legal Aid!</h2>
+                </div>
+            </template>
+            <template>
+                <div class="white-bg" style="padding: 0 50px 50px 50px">
+                    <h2 class="text-center">Contact Us</h2>
+                    <br>
+                    <v-form id="#test">
+                        <v-text-field
+                                v-model="emailForm.name"
+                                label="Name"
+                                placeholder="Name"
+                                single-line
+                                solo
+                        ></v-text-field>
+                        <v-text-field
+                                v-model="emailForm.email"
+                                label="Email"
+                                placeholder="Email"
+                                single-line
+                                solo
+                        ></v-text-field>
+                        <v-text-field
+                                v-model="emailForm.phone"
+                                label="Phone"
+                                placeholder="Phone"
+                                single-line
+                                solo
+                        ></v-text-field>
+                        <v-textarea
+                                solo
+                                v-model="emailForm.situation"
+                                name="Situation"
+                                placeholder="Situation, Background, Status of Your Case"
+                        ></v-textarea>
+                        <v-textarea
+                                solo
+                                v-model="emailForm.legalaid"
+                                name="LegalAid"
+                                placeholder="Have you called legal aid to find out if you are eligible?"
+                        ></v-textarea>
+                        <v-alert
+                                v-if="formSuccess === 'success'"
+                                dense
+                                text
+                                type="success">
+                            Message was successfully sent!
+                        </v-alert>
+                        <v-alert
+                                v-if="formSuccess === 'error'"
+                                dense
+                                text
+                                type="error">
+                            Message was not successful, please try again later!
+                        </v-alert>
+
+                        <v-btn class="mr-4" color="#e99c46" @click="submit">submit</v-btn>
+                    </v-form>
+                </div>
+            </template>
+        </v-main>
+        <div id="bg">
+            <img src="images/bgxx.jpeg">
+        </div>
+        <template>
+            <footer>
+                            <span>702-1 Concorde Gate, Toronto, ON M3C 3N6</span>
+                <br>
+                <span>110 James Street, St. Catharines, ON L2R 7E8</span>
+                <br>
+
+                <!-- By Thanh Tran - thanh-tran@hotmail.com -->
+            </footer>
+        </template>
+    </v-app>
+</div>
+<script>
+    var pa = new Vue({
+        el: '#practice-areas',
+        vuetify: new Vuetify(),
+        data: {
+            mobile: false,
+            selectedTab: 1,
+            more: [
+                {value:'Home', id:'index'}, {value:'Practice Areas', id:'practice-areas'}, {value:'CAS Application', id:'cas-applications'}, {value:'Urgent Motions', id:'urgent-motions'}, {value:'Domestic Abuse', id:'domestic-abuse'}
+            ],
+            resources:[
+                {title:'Introduction to Family Law (PDF)', link:'https://img1.wsimg.com/blobby/go/500cebe3-c25b-47d0-be25-10d86ad2881d/downloads/introfam.pdf?ver=1593108884352'},
+                {title:'Children\'s Aid Society (PDF)', link:'https://img1.wsimg.com/blobby/go/500cebe3-c25b-47d0-be25-10d86ad2881d/downloads/cas-en.pdf?ver=1593108884352'},
+                {title:'Custody Access Rights and Parenting Plans (PDF)', link:'https://img1.wsimg.com/blobby/go/500cebe3-c25b-47d0-be25-10d86ad2881d/downloads/custodyaccess.pdf?ver=1593108884352'},
+                {title:'Family Violence When Sponsored by Spouse for Immigration (PDF)', link:'https://img1.wsimg.com/blobby/go/500cebe3-c25b-47d0-be25-10d86ad2881d/downloads/famvio.pdf?ver=1593108884352'},
+                {title:'Family Law Rules and Procedure (DOC)', link:'https://img1.wsimg.com/blobby/go/500cebe3-c25b-47d0-be25-10d86ad2881d/downloads/990114_e.doc?ver=1593108884352'},
+                {title:'MySupportCalculator Guide Draft 13.1 Financial Statement with Instructions (PDF)', link:'https://img1.wsimg.com/blobby/go/500cebe3-c25b-47d0-be25-10d86ad2881d/downloads/Draft%2013.1%20Financial%20Statement%20with%20Instructio.pdf?ver=1593108884352'},
+                {title:'Basic Documents to Provide to your Lawyer (PDF)', link:'https://img1.wsimg.com/blobby/go/500cebe3-c25b-47d0-be25-10d86ad2881d/downloads/Basic%20Documents%20to%20Provide%20to%20Your%20Lawyer%20-%20my.pdf?ver=1593108884352'}
+            ],
+            contactInfo: {
+                phoneNumber: {  val: '(289) 925-2376',
+                    href: 'tel:+2899252376',
+                    icon: 'mdi-phone'}
+            },
+            formSuccess: 'nothing',
+            emailForm:{ name:'', email: '', phone: '', situation: '', legalaid:'' },
+        },
+        methods:{
+            goToPage(page){
+                window.open(page +".html", "_self");
+            },
+            downloadItem(link){
+                window.open(link, "_blank");
+            },
+            onResize () {
+                this.windowSize = {x: window.innerWidth, y: window.innerHeight};
+                if ( window.outerWidth < 768 ){
+                    this.mobile = true;
+                }
+                else{
+                    this.mobile = false;
+                }
+            },
+            submit(){
+                axios
+                    .post('contact_me.php', JSON.stringify(this.emailForm))
+                    .then(response => this.successForm())
+                    .catch(error => (this.formSuccess = 'error'))
+            },
+            successForm(){
+                // clear form
+                for ( fields in this.emailForm){
+                    this.emailForm[fields] = '';
+                }
+                this.formSuccess = 'success';
+            }
+        },
+        mounted () {
+            this.onResize();
+        }
+    });
+</script>
+</body>
+</html>
