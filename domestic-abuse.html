@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Domestic Abuse</title>
+</head>
+<style>
+    .nav-button:hover{
+        background: url('images/book-ladder-md-bg.jpg') no-repeat center left fixed !important;
+        color: white;
+        font-weight: bold !important;
+        font-size: 100% !important;
+        transition: all 200ms !important;
+    }
+</style>
+<body>
+<div id="domestic-abuse-areas" :class="mobile===false? 'main-section' : 'main-section-mobile'">
+    <v-app v-resize="onResize">
+        <v-main>
+            <v-img src="images/logos/logo-with-number.png" class="animate__animated animate__fadeInLeft"></v-img>
+            <v-img src="images/logos/domestic-abuse-title.png"></v-img>
+            <div style="background-color: white">
+            <div class="white-bg" style="padding-bottom: 20px">
+                <ul class="menu">
+                        <li class="nav-button" v-for="(item, i) in more" :key=i  @click="goToPage(item.id)">
+                            {{item.value}}
+                        </li>
+                </ul>
+            </div>
+	<v-img src="images/cases.jpg"></v-img>
+            <div class="white-bg no-top-padding">
+<br>
+                <v-responsive>
+                    <v-lazy :options="{threshold: .9}" transition="scale-transition">
+                        <h2>Urgent Motions, Restraining Orders and Family Violence</h2>
+                    </v-lazy>
+                </v-responsive>
+                <br>
+                <p> Please call us to discuss whether an Urgent Motion is warranted in your family law matter. One way to obtain protection from the Court is in the form of a Restraining Order. You can obtain a Restraining Order against someone you are currently living with, your spouse and against your partner, where you are concerned that they might harm you or your child(ren). You can bring an Urgent Motion for a Restraining Order under the Family Law Act, which sets out the test. The test under the Family Law Act for a Restraining Order is whether you are fearful for your safety or the safety of any child(ren) that is(are) in your lawful custody, and that fit fear and concern is based on reasonable grounds. Often times, if children are in danger F.A.C.S or C.A.S will become involved. This can range in degrees of intrusiveness from a voluntary service agreement to a protection application in the Ontario Court of Justice or Superior Court of Justice. </p>
+                <p>You do not need a Lawyer to obtain a Restraining Order, but it is a good idea to get a Lawyer to represent you, especially if your matter will involve issues that go beyond just a Restraining Order. A Restraining Order is a Court Order that your spouse or whoever is the subject of the Order, must obey, and if one fails to obey the court order that is a crime, for which the perpetrator can be charged and prosecuted. </p>
+                <p>Violence can take many forms and can even be in the form of a spouse's text messages. In one case, Menchella v Menchella, the Court found that the Father’s text messages was a form of violence, and the Court granted the Mother's Motion to get exclusive possession of the Matrimonial home, and to evict the Father from the home. The reasoning was that the text messages sent by the Father was something that any reasonable person would be intimidated and threatened by.</p>
+                <p>In another case, B (M.E) v. B. (A.R), the Court found that the Mother was so vexatious in her actions, launching unnecessary litigation proceedings, and following a pattern of disobeying Court Orders. All this amounted to family violence in the context of the province's Family Law Act. I suspect that in the future, there will be more and more of these cases, forms of violence recorded on Social Media platforms, through the Court system, as well as in vexatious proceedings. It is interesting that a Court found that violence can be made out from a person launching Court cases because that is not a traditional form of violence. If you are involved in a Court proceeding, you should know that it can be very, very stressful and from a mental health perspective, it is best to have Legal representation and Counsel representing you, rather than trying to Self-represent.</p>
+                <p>If you are the victim of a violent crime, know that the Government can actually compensate and make payments to victims of violent crime(s) in the province of Ontario. The Tribunal, Criminal Injuries Compensation Board, has jurisdiction over this.</p>
+<p>
+Electronic recordings can be an important part of the evidence in a legal case, including a family law case. Unlike oral testimony, which is an individual’s account of something which was said or done in the past, and which may be tainted by various factors such as flaws in a witnesses’ memory, personal biases of a witness and even dishonesty, a recording can, if it is sufficiently clear and reliable, show precisely what was said or done or otherwise took place at the time in question. This can make such recordings invaluable as a source of evidence at a hearing.   </p>
+
+<p>
+In some cases, recordings may have been taken surreptitiously, without the knowledge of one or more individual being recorded. There can be some value to taking recordings in such a manner, as a person who knows they are being recorded might behave or speak in a very different manner from how they might behave or speak if they do not know this.   </p>
+<p>
+Nevertheless, there are also significant policy concerns related to admitting surreptitious recordings into evidence. For example, a party worrying that the other party might be secretly recording what one is saying can aggravate the already tense situations which are frequently present in family law cases. Condoning such behaviour can be detrimental to the process of rebuilding trust so that separated parties can work together in the best interests of children. There can also be concerns about potential prejudice to trial fairness. For these reasons, in spite of the value of secretly taken electronic recordings as evidence, there are good reasons for not allowing them to be used in Family Law Hearings.  </p>
+<p>
+It falls, therefore, to consider under what circumstances and in what cases surreptitious recordings will be admitted into evidence in a Family Law proceeding. To determine this, one must look at the relevant statutes and cases, as well as balancing the relevant factors against the facts of each individual case, in order to come to an answer as to whether or not such recordings will be admitted into evidence in any particular instance.  </p>
+<p>
+The relevant statutory law is the first place to look in considering this question. Section 34.1 of the Evidence Act, RSO 1990, c. E.23 deals with the admissibility of electronic records and provides, in part, as follows:
+Electronic records
+Definitions
+34.1 (1) In this section,
+“data” means representations, in any form, of information or concepts; (“données”)
+“electronic record” means data that is recorded or stored on any medium in or by a computer system or other similar device, that can be read or perceived by a person or a computer system or other similar device, and includes a display, printout or other output of that data, other than a printout referred to in subsection (6); (“document électronique”)
+“electronic records system” includes the computer system or other similar device by or in which data is recorded or stored, and any procedures related to the recording and storage of electronic records. (“système d’archivage électronique”) 1999, c. 12, Sched. B, s. 7 (2).
+Application
+(2) This section does not modify any common law or statutory rule relating to the admissibility of records, except the rules relating to authentication and best evidence. 1999, c. 12, Sched. B, s. 7 (2).
+...
+Authentication
+(4) The person seeking to introduce an electronic record has the burden of proving its authenticity by evidence capable of supporting a finding that the electronic record is what the person claims it to be. 1999, c. 12, Sched. B, s. 7 (2).
+...
+Presumption of integrity
+(7) In the absence of evidence to the contrary, the integrity of the electronic records system by or in which an electronic record is recorded or stored is proved for the purposes of subsection (5),
+(a) by evidence that supports a finding that at all material times the computer system or other similar device was operating properly or, if it was not, the fact of its not operating properly did not affect the integrity of the electronic record, and there are no other reasonable grounds to doubt the integrity of the electronic records system;</p> 
+
+<p> 
+Case law helps to show what is required to satisfy the requirements of the Evidence Act. For instance, Paragraph 12 of the 2020 Superior Court of Justice decision in Dlacic v Dlacic indicates that the integrity, reliability and authenticity of a recording can be established if the relevant part of the recording is clear and if oral evidence indicates, on a balance of probabilities, that the recording has not been tampered with and is authentic.  </p>
+<p>
+On the subject of reliability, it is indicated at Paragraph 64 of the 2019 Superior Court of Justice decision in Tillger v Tillger that there can be many concerns regarding the reliability of recordings. For example, a recording may not accurately reflect or give context to the events or conversations which are purportedly depicted therein, it may fail to accurately reflect a recorded person's typical behaviour, it likely reflects "artificial" conduct on the part of the recording party, it can easily be edited or chosen selectively from among numerous recordings, it likely fails to reflect the entire interaction or context thereof, it may depict only an isolated incident and the recording individual may have "provoked" or staged the recording. For a recording to be admitted, it is important that these concerns be addressed.  </p>
+<p>
+When it comes to the factor of relevance, the decision in Dlacic provides valuable insight. At Paragraphs 8-9 of this decision it is indicated that for evidence to be admissible, it must be relevant to a matter in issue, that evidence used in cross-examination to test a witness' perception and narrative of events in terms of accuracy is proper, and that cross-examination can also be used to test if a witness' evidence is tainted by enmity towards a party. This test must be applied to surreptitious recordings to determine if they are relevant.  </p>
+<p>
+It must also be asked if the recordings are subject to exclusion under a clear legal or policy rule. This is explained well at Paragraph 10 of Dlacic, which sets out that, for evidence to be admissible, it must be both relevant and not subject to exclusion under any other clear rule of policy or law. Paragraph 22 of Dlacic elaborates on this by setting out that there are concerns about relying on surreptitious recordings in family law cases, and courts have sought to discourage this.  </p>
+<p>
+An example of a case discussing the policy reasons for discouraging the admission of surreptitious recordings into evidence in Family Law matters is the 2006 Ontario Court of Justice decision in Hameed v Hameed. At Paragraph 11 of Hameed, it is held that surreptitious recording of telephone calls by family law litigants is to be strongly discouraged. The reasons given for this are that a party's worrying that they might be being secretly recorded by the other can aggravate situations where significant mistrust and conflict is already present and condoning such behaviour can be destructive to the process of helping to rebuild trust so that the parties can act together in the children's best interests. These considerations are widely held to in Family Law, being also discussed at Paragraph 14 of the 2021 Superior Court of Justice decision in Pantin v Pantin, and at Paragraph 66 of Tillger.  </p>
+<p>
+In light of these policy concerns, a balance must be struck between the risks and benefits of allowing secret recordings as evidence. Fortunately, the case law provides a test for making such determinations. At Paragraphs 13, 15 and 16 of Dlacic, it is stated a fair trial must arrive at the truth while preserving procedural fairness and that answering the question of whether a recording ought to be excluded due to its having been obtained surreptitiously requires balancing the probative value of the evidence against potential prejudice to trial fairness, as well as other policy concerns. Similarly, Paragraph 62 of Tillger describes the Court's residual discretion to exclude otherwise admissible evidence where its prejudicial effect outweighs its probative value. This need for a balance between policy considerations and the probative value of the evidence is furthermore noted at Paragraph 13 of Hameed, Paragraph 15 of the 2016 Superior Court of Justice decision in Johal v Sangha, Paragraph 13 of Pantin, and Paragraph 12 of the 2011 Ontario Court of Appeal decision in Sordi v Sordi.  </p>
+<p>
+Now that the test has been set out, it is worth reviewing some of the factors which can support a decision on whether or not to allow surreptitious recordings in evidence. The most obvious one is that, where recordings have a strong probative value, they may be admitted into evidence, as noted for example at Paragraph 24 of Dlacic and Paragraph 15 of Johal.  </p>
+<p>
+Pantin provides an interesting example of a decision to allow a surreptitious recording into evidence despite policy considerations favouring a contrary decision. The judge in this matter, while acknowledging the significant policy considerations against allowing a recording, chose to admit it as evidence on several grounds These grounds were that serious misconduct was disclosed by the recording, that it was not an outburst in response to the Respondent's decision to leave the relationship and that the recording raised credibility issues with respect to the Applicant’s evidence, confirming that he had said things which he had denied saying. In light of this, it was determined that the probative value of the evidence outweighed its prejudicial effects (Paragraphs 15-19). Another good example of when a recording has been allowed was in the case of Tillger, where, despite concerns regarding the reliability of recordings, they were allowed on account of showing considerable parental conflict in the children's presence, and one party behaving inappropriately in the presence of the children (Paragraph 76). Additionally, in Dlacic at Paragraph 28, numerous factors which can support admission into evidence were also set out, including finding that a recording is authentic and reliable, finding that an individual was not manipulated into saying what is heard, that the relevant individual in the recording is present as a witness and can be cross-examined, that it provides information not otherwise available to the Court, that the issues raised are sufficiently important to allow the recordings to be included and that a compelling reason has been provided for admitting the evidence.  </p>
+<p>
+Whether or not concerns exist related to hearsay is also considered. In Dlacic, it was noted that the recorded individual was a witness, who could be cross-examined, and therefore could be cross-examined on the matters contained in the recording, which was a factor in the decision to allow the recording into evidence (Paragraph 21). That statements not being hearsay is a factor favouring the admission of recordings is also indicated at Paragraph 60 of the 2019 Superior Court of Justice decision in Tillger.  </p>
+<p>
+It is also worth noting that, as explained at Paragraph 28 of Dlacic, a judge can, in allowing surreptitious recordings as evidence in family law proceedings, state that only certain recordings or parts of recordings may be admitted, and can also limit the uses to which these may be put.  </p>
+<p>
+In the 2022 Ontario Superior Court of Justice decision on Rehman v Zaib, the father had not seen the child in over seven months as there were sexual and physical abuse allegations against him. The police and the Children’s Aid Society both concluded that the allegations were not credible. The father brought a Motion for parenting time and the mother opposed this Motion, wanting the children to do more counseling before parenting time between the father and the children could resume. The judge ordered supervised parenting time between the father and the children. There were concerns raised about the mother’s mental health as well as concerns that the children had been harmed by the mother’s response to the allegations. The children were resistant to seeing their father. However, Justice Mackinnon concluded that supervised parenting time should be ordered as the mother did not address the allegations of her having mental health issues in her Affidavit, and because neither the police nor the Children’s Aid Society found her allegations to be credible. Although the father’s lack of parenting time was an issue, the Honourable Justice Mackinnon found that this was not sufficient to make an Order for no parenting time at all. An Order was therefore made that the father would have supervised parenting time with the children once per week for two hours and that after four weeks this would be increased to three hours per week, to be increased after another four weeks to twice per week for a period of two hours on a weekday and three hours on either a Saturday or Sunday. Had recordings of the mother’s behaviour or of the abuse allegedly suffered by the children been available, the Honourable Justice Mackinnon would have been in a better position to be able to make a more informed decision on this Motion.  </p>
+<p>
+In order for a recording taken in secret to be admitted into evidence in a family law proceeding, it must satisfy the ordinary rules related to relevance, reliability, etc. In addition to this, owing to policy concerns about prejudicing trial fairness and aggravating already volatile situations, there must be a balancing of the policy concerns and the probative value of the evidence, to determine which outweighs the other, with factors such as the importance of the issues raised, whether or not the individual being recorded will be present as a witness and the nature of the information disclosed, among others, being relevant factors. Upon having heard the evidence, the judge can decide to exclude the evidence, to admit the evidence, or to admit part of the evidence, and also has discretion to order that evidence can only be admitted for a specified purpose.  </p>
+
+                <template>
+                    <div class="white-bg no-top-padding" style="text-align: center">
+                        <br>
+                        <h2 class="text-center">Call us today for a free consultation</h2>
+                        <br>
+                        <v-responsive>
+                            <v-lazy :options="{threshold: .9}" transition="scale-transition">
+                                <div>
+                                    <v-btn outlined color="#e99c46" fab x-large dark :href="contactInfo.phoneNumber.href">
+                                        <v-icon>mdi-phone</v-icon>
+                                    </v-btn>
+                                    <br>
+                                    <br>
+                                    <span style="font-size: 1.5rem" class="text-center">
+                                    {{contactInfo.phoneNumber.val}}
+                                </span>
+                                </div>
+                            </v-lazy>
+                        </v-responsive>
+                        <br>
+                        <br>
+                        <h2 class="text-center">We accept Legal Aid!</h2>
+                    </div>
+                </template>
+            </div>
+                <div class="white-bg" >
+                    <video  controls src="images/five.mp4"></video>
+                </div>
+                <div class="white-bg" >
+                    <video  controls src="images/six.mp4"></video>
+                </div>
+                <template>
+                    <div class="white-bg" style="padding: 50px;">
+                        <h2 class="text-center">Contact Us</h2>
+                        <br>
+                        <v-form id="#test">
+                            <v-text-field
+                                    v-model="emailForm.name"
+                                    label="Name"
+                                    placeholder="Name"
+                                    single-line
+                                    solo
+                            ></v-text-field>
+                            <v-text-field
+                                    v-model="emailForm.email"
+                                    label="Email"
+                                    placeholder="Email"
+                                    single-line
+                                    solo
+                            ></v-text-field>
+                            <v-text-field
+                                    v-model="emailForm.phone"
+                                    label="Phone"
+                                    placeholder="Phone"
+                                    single-line
+                                    solo
+                            ></v-text-field>
+                            <v-textarea
+                                    solo
+                                    v-model="emailForm.situation"
+                                    name="Situation"
+                                    placeholder="Situation, Background, Status of Your Case"
+                            ></v-textarea>
+                            <v-textarea
+                                    solo
+                                    v-model="emailForm.legalaid"
+                                    name="LegalAid"
+                                    placeholder="Have you called legal aid to find out if you are eligible?"
+                            ></v-textarea>
+                            <v-alert
+                                    v-if="formSuccess === 'success'"
+                                    dense
+                                    text
+                                    type="success">
+                                Message was successfully sent!
+                            </v-alert>
+                            <v-alert
+                                    v-if="formSuccess === 'error'"
+                                    dense
+                                    text
+                                    type="error">
+                                Message was not successful, please try again later!
+                            </v-alert>
+
+                            <v-btn class="mr-4" color="#e99c46" @click="submit">submit</v-btn>
+                        </v-form>
+                    </div>
+                </template>
+            </div>
+        </v-main>
+        <div id="bg">
+            <img src="images/444.jpeg">
+        </div>
+        <template>
+            <footer>
+                 <span>702-1 Concorde Gate, Toronto, ON M3C 3N6</span><br>
+                <span>110 James St, St. Catharines, ON L2R 7E8</span>
+                <br>
+                
+            </footer>
+        </template>
+    </v-app>
+</div>
+<script>
+    var cas = new Vue({
+        el: '#domestic-abuse-areas',
+        vuetify: new Vuetify(),
+        data: {
+            mobile: false,
+            selectedTab: 4,
+            more: [
+                {value:'Home', id:'index'}, {value:'Practice Areas', id:'practice-areas'}, {value:'CAS Application', id:'cas-applications'}, {value:'Urgent Motions', id:'urgent-motions'}, {value:'Domestic Abuse', id:'domestic-abuse'}
+            ],
+            contactInfo: {
+                phoneNumber: {  val: '(289) 925-2376',
+                    href: 'tel:+2899252376',
+                    icon: 'mdi-phone'}
+            },
+            formSuccess: 'nothing',
+            emailForm:{ name:'', email: '', phone: '', situation: '', legalaid:'' },
+        },
+        methods:{
+            goToPage(page){
+                window.open(page +".html", "_self");
+            },
+            onResize () {
+                this.windowSize = {x: window.innerWidth, y: window.innerHeight};
+                if ( window.outerWidth < 768 ){
+                    this.mobile = true;
+                }
+                else{
+                    this.mobile = false;
+                }
+            },
+            submit(){
+                axios
+                    .post('contact_me.php', JSON.stringify(this.emailForm))
+                    .then(response => this.successForm())
+                    .catch(error => (this.formSuccess = 'error'))
+            },
+            successForm(){
+                // clear form
+                for ( fields in this.emailForm){
+                    this.emailForm[fields] = '';
+                }
+                this.formSuccess = 'success';
+            }
+        },
+        mounted () {
+            this.onResize();
+        }
+    });
+</script>
+</body>
+</html>

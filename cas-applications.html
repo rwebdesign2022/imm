@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>CAS Application</title>
+</head>
+<style>
+    .nav-button:hover{
+        background: url('images/cas-bg.jpg')no-repeat top fixed !important;
+        color: white;
+        font-weight: bold !important;
+        font-size: 100% !important;
+        transition: all 200ms !important;
+    }
+
+</style>
+<body>
+<div id="cas-areas" :class="mobile===false? 'main-section' : 'main-section-mobile'">
+    <v-app>
+        <v-main>
+            <v-img src="images/logos/logo-with-number.png" class="animate__animated animate__fadeInLeft"></v-img>
+            <template>
+                <v-img src="images/logos/cas-title.png"></v-img>
+                <div class="white-bg" style="padding-bottom: 20px">
+                    <ul class="menu">
+                        <li class="nav-button" v-for="(item, i) in more" :key=i  @click="goToPage(item.id)">
+                            {{item.value}}
+                        </li>
+                    </ul>
+                </div>
+            </template>
+            <div class="white-bg no-top-padding">
+                <p>Disclaimer: The information provided on this website is not intended to be acted upon as legal advice but is legal information only. It is not intended to be acted upon in any specific situation. While we take care to ensure that the information contained in this website is accurate and up to date, legal situations are always very fact dependent, and even small differences in fact may have very different legal results. Reading this website does not create a solicitor- client relationship. If you have a specific legal situation, you should seek legal counsel to advise you on the specifics of your case. We assume no responsibility for any consequence relating directly or indirectly to any action or inaction you take based on the Content of this website.</p>
+                <h1>Children’s Aid Society Application</h1>
+                <br>
+                <v-img src="images/cas-1.png"></v-img>
+                <v-img src="images/cas-2.png"></v-img>
+                <v-img src="images/cas-3.png"></v-img>
+                <br>
+                                <h2>A Concise Primer on the Role of the Office of the Children's Lawyer in Family and CAS/FACS Proceedings</h2>
+                <p>Call Us Today at 289-925-2376</p>
+                <br>
+                <p>The OCL represents children in court proceedings, making their views and preferences heard. In house social workers and clinicans do s.112 assessments on behalf of the OCL when required. These assessments are fact finding missions. Once an assessment is done it is filed in Court. 
+                <br>
+                <p>If you're involved in family court and the OCL assessment is against you, know that its not too late. With our meticulous attention to detail, experienced insights, and strong advocacy in this area of family law, we can help you obtain the outcome that is in your children's best interests. </p>
+                <p>The Office of the Children's Lawyer is a Government Agency tasked with representing children in Family Law Proceedings in which it is determined that such is necessary in order to properly have the best interests of the children considered.The involvement of the Office of the Children's Lawyer (hereinafter "the OCL") takes two forms. This first takes the form of an investigation conducted by a clinician employed by the OCL. The second type of OCL involvement takes the form of the OCL preparing what is known as a Voice of the Child Report. In certain situations, the OCL can become involved in financial matters relating to the children. For example, if a person is trying to set aside or obviate a trust in which the child is a beneficiary, the OCL must be notified.</p>
+                
+                
+<p>The OCL's involvement is generally of a fact-finding nature. As such, it generally carries a great deal of weight in terms of determining what decision a judge will make. However, it can be critiqued and undermined by drawing attention to the passage of time since the investigation took place and by bringing in another expert to critique the report. A report of the OCL will generally be made pursuant to s. 112 of the Courts of Justice Act (hereinafter "a s. 112 Report") conducted by a clinician or a Voice of the Child Report prepared by the lawyer. A s. 112 Report is meant to assist the Court and the parties in determining decision-making responsibilities and parenting time (formerly "custody" and "access"), and what arrangement in relation to these would be in the best interests of the child. Decision-making responsibility generally consists of four different categories of responsibilities, these being medical decisions, educational decisions, decisions related to extra-curricular responsibilities and decisions related to the religious beliefs of the child. Once a judge has made a decision that the OCL is to become involved, the parties must each serve a signed Intake Form to the Office of the Children's Lawyer within 14 days of the date of the Order.</p>
+
+<p>The OCL will use the information contained in the Intake Forms, as well as any information received from Children's Aid Societies, in order to decide whether to become involved in a matter. In some situations, the OCL may decline to take on a case. In general, the OCL will only accept about 70% of cases referred to them. If a decision is made by the OCL to become involved, they will then contact collateral sources, including but not limited to doctors, school principals and teachers, in order to obtain necessary information. One form of information-gathering which is not conducted pursuant to a s. 112 Assessment is psychological testing. Once a s. 112 Report is completed, the OCL will share this with the parties in a disclosure meeting and file it in Court. This is a significant piece of evidence at trial, and judges will generally give a s. 112 Assessment significant weight at trial. However, judges can make a decision contrary to the recommendations of a s. 112 Report, which will generally take place where the s. 112 Report is shown to be weak, such as when assumptions and recommendations which go into preparing the Report in question are flawed, or if there is some other relevant issue, such as one of the issues referenced in paragraph 2 above.</p>
+
+<p>If a party disagrees with a s. 112 Report they can, within 30 days, file a formal dispute of the s. 112 Report. The OCL considers the dispute and may change their recommendation accordingly.</p>
+
+<p>Psychological testing can, however, be conducted pursuant to another type of assessment, this being a s. 30 Assessment, which refers to s. 30 of the Children's Law Reform Act (hereinafter "the CLRA"). S. 30 of the CLRA governs the appointment of assessors in relation to assessments of decision-making responsibility and parenting time (formerly "custody" and "access"). These are voluntary assessments, meaning that for them to take place they must be agreed to by all parties in advance, unless a judge makes a Court Order mandating such an assessment. S. 30 Assessments are generally conducted by a psychologist, psychiatrist or social worker and the parents must share the costs of this assessment. This is in contrast to other operations of the OCL, which the parties do not need to pay for themselves.</p>
+
+<p>In Canepa v Canepa, 2018 ONSC 5154, the Respondent has brought a 14B Motion ("in writing") requesting an Order for a Voice of the Child Report, which was objected to by the Applicant on procedural and substantive grounds. The parties had been in a relationship for five years and had two children, aged eight and six years old at the time of the decision. A key issue was the Respondent's parenting time with the children. Among the determinations made by the Honourable Justice Kiteley were that the subject matter of a Motion for a Voice of the Child Report was procedural and uncomplicated, and could properly be dealt with by 14B Motion (Paragraph 16), that a regulatory authority exists for a Judge to order a Voice of the Child Report absent the consent of the parties, pursuant to Rule 20.1(3) of the Family Law Rules (Paragraph 18), that it is acceptable to order a Voice of the Child Report even where a child is somewhat younger than seven years old (Paragraph 22) and that it is appropriate to introduce a professional third party where the parents cannot negotiate material changes (Paragraph 21). It was also noted that there is sometimes a concern about a Voice of the Child Report being used by an alienating parent to get the other parent out of the child's life, but that such was not the case there.</p>
+
+<p>OCL will usually be involved in Child Protection proceedings in which a child is over six years old. The OCL will generally put forward the Child's views and preferences. In addition to their role in preparing s. 112 Reports and s. 30 Assessments, the OCL also can appear at Motions and Trials to argue in favour of the position being taken by them in this proceeding. The OCL's role is especially vital in cases where parental alienation is suspected, as they can take the role of a neutral third party in order to determine if such alienation is, in fact, taking place.</p>
+
+<p>The one type of situation where an OCL would almost always be helpful is when the Children's Aid Society or Family and Child Services (CAS or FACS, respectively) intrudes and apprehends a child from the care of a parent. In those situations, the overall views and preferences is almost always that the child wants to come back to the care of the parent from whose care the child was forcefully apprehended (often with police assistance and involvement). It is astounding how often the fact that a child forcefully separated from a parent, placed in a stranger's home and the ensuing emotional harm that this causes is ignored or completely disregarded in CAS or FACS proceedings, to the detriment of the child and the child's best interests. However that is exactly the sort of situation where good OCL counsel can communicate the child's perspective and how expanding access or returning a child to the care of the parent or person who had charge of the child would be beneficial and in their best interests, in accordance with their emotional, physical and psychological needs. This is an important piece of evidence that can tilt the balance in the parents' favor, and in FACS and CAS litigation every advantage can make a difference.</p>
+            </div>
+            <div class="white-bg" >
+                <video  controls src="images/children-law-revised.mp4"></video>
+            </div>
+            <div class="white-bg" >
+                <video  controls src="images/one.mp4"></video>
+            </div>
+            <div class="white-bg" >
+                <video  controls src="images/three.mp4"></video>
+            </div>
+            <div class="white-bg no-top-padding">
+                <template>
+                    <div class="white-bg no-top-padding" style="text-align: center">
+                        <br>
+                        <h2 class="text-center">Call us today. We can help. 
+                        </h2>
+                        <br>
+                        <v-responsive>
+                            <v-lazy :options="{threshold: .9}" transition="scale-transition">
+                                <div>
+                                    <v-btn outlined color="#e99c46" fab x-large dark :href="contactInfo.phoneNumber.href">
+                                        <v-icon>mdi-phone</v-icon>
+                                    </v-btn>
+                                    <br>
+                                    <br>
+                                    <span style="font-size: 1.5rem" class="text-center">
+                                    {{contactInfo.phoneNumber.val}}
+                                </span>
+                                </div>
+                            </v-lazy>
+                        </v-responsive>
+                        <br>
+                        <br>
+                        <h2 class="text-center">We accept Legal Aid!</h2>
+                    </div>
+                </template>
+                <template>
+                    <div class="white-bg">
+                        <h2 class="text-center">Contact Us</h2>
+                        <br>
+                        <v-form id="#test">
+                            <v-text-field
+                                    v-model="emailForm.name"
+                                    label="Name"
+                                    placeholder="Name"
+                                    single-line
+                                    solo
+                            ></v-text-field>
+                            <v-text-field
+                                    v-model="emailForm.email"
+                                    label="Email"
+                                    placeholder="Email"
+                                    single-line
+                                    solo
+                            ></v-text-field>
+                            <v-text-field
+                                    v-model="emailForm.phone"
+                                    label="Phone"
+                                    placeholder="Phone"
+                                    single-line
+                                    solo
+                            ></v-text-field>
+                            <v-textarea
+                                    solo
+                                    v-model="emailForm.situation"
+                                    name="Situation"
+                                    placeholder="Situation, Background, Status of Your Case"
+                            ></v-textarea>
+                            <v-textarea
+                                    solo
+                                    v-model="emailForm.legalaid"
+                                    name="LegalAid"
+                                    placeholder="Have you called legal aid to find out if you are eligible?"
+                            ></v-textarea>
+                            <v-alert
+                                    v-if="formSuccess === 'success'"
+                                    dense
+                                    text
+                                    type="success">
+                                Message was successfully sent!
+                            </v-alert>
+                            <v-alert
+                                    v-if="formSuccess === 'error'"
+                                    dense
+                                    text
+                                    type="error">
+                                Message was not successful, please try again later!
+                            </v-alert>
+
+                            <v-btn class="mr-4" color="#e99c46" @click="submit">submit</v-btn>
+                        </v-form>
+                    </div>
+                </template>
+            </div>
+        </v-main>
+        <div id="bg">
+            <img src="images/bg00.jpeg">
+        </div>
+        <template>
+            <footer>
+                            <span>702-1 Concorde Gate, Toronto, ON M3C 3N6</span>
+                <br>
+                <span>110 James Street, St. Catharines, ON L2R 7E8</span>
+                <br>
+                <!-- By Thanh Tran - thanh-tran@hotmail.com -->
+            </footer>
+        </template>
+    </v-app>
+</div>
+<script>
+    var cas = new Vue({
+        el: '#cas-areas',
+        vuetify: new Vuetify(),
+        data: {
+            mobile: false,
+            selectedTab: 2,
+            more: [
+                {value:'Home', id:'index'}, {value:'Practice Areas', id:'practice-areas'}, {value:'CAS Application', id:'cas-applications'}, {value:'Urgent Motions', id:'urgent-motions'}, {value:'Domestic Abuse', id:'domestic-abuse'}
+            ],
+            contactInfo: {
+                phoneNumber: {  val: '(289) 925-2376',
+                    href: 'tel:+2899252376',
+                    icon: 'mdi-phone'}
+            },
+            formSuccess: 'nothing',
+            emailForm:{ name:'', email: '', phone: '', situation: '', legalaid:'' },
+        },
+        methods:{
+            goToPage(page){
+                window.open(page +".html", "_self");
+            },
+            onResize () {
+                this.windowSize = {x: window.innerWidth, y: window.innerHeight};
+                if ( window.outerWidth < 768 ){
+                    this.mobile = true;
+                }
+                else{
+                    this.mobile = false;
+                }
+            },
+            submit(){
+                axios
+                    .post('contact_me.php', JSON.stringify(this.emailForm))
+                    .then(response => this.successForm())
+                    .catch(error => (this.formSuccess = 'error'))
+            },
+            successForm(){
+                // clear form
+                for ( fields in this.emailForm){
+                    this.emailForm[fields] = '';
+                }
+                this.formSuccess = 'success';
+            }
+        },
+        mounted () {
+            this.onResize();
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[15-Jul-2020 03:38:47 UTC] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/yqvuomr2gynx/public_html/protect-my-child.ca/ssl-setup.php on line 1962
+[07-Feb-2022 03:37:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 10
+[07-Feb-2022 03:37:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 11
+[07-Feb-2022 03:37:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 12
+[07-Feb-2022 03:37:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 13
+[07-Feb-2022 03:37:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 14
+[03-May-2022 12:00:31 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 10
+[03-May-2022 12:00:31 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 11
+[03-May-2022 12:00:31 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 12
+[03-May-2022 12:00:31 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 13
+[03-May-2022 12:00:31 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/yqvuomr2gynx/public_html/protect-my-child.ca/contact_me.php on line 14
