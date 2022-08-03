@@ -44,6 +44,7 @@
                 <v-img src="images/cas-1.png"></v-img>
                 <v-img src="images/cas-2.png"></v-img>
                 <v-img src="images/cas-3.png"></v-img>
+                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfL5K82K9MzHyslLRgVlqm5wMu5C3LRaWL9tTSB7t_Ghascrw/viewform?embedded=true" width="640" height="971" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 <br>
                                 <h2>A Concise Primer on the Role of the Office of the Children's Lawyer in Family and CAS/FACS Proceedings</h2>
                 <p>Call Us Today at 289-925-2376</p>
@@ -103,61 +104,7 @@
                         <h2 class="text-center">We accept Legal Aid!</h2>
                     </div>
                 </template>
-                <template>
-                    <div class="white-bg">
-                        <h2 class="text-center">Contact Us</h2>
-                        <br>
-                        <v-form id="#test">
-                            <v-text-field
-                                    v-model="emailForm.name"
-                                    label="Name"
-                                    placeholder="Name"
-                                    single-line
-                                    solo
-                            ></v-text-field>
-                            <v-text-field
-                                    v-model="emailForm.email"
-                                    label="Email"
-                                    placeholder="Email"
-                                    single-line
-                                    solo
-                            ></v-text-field>
-                            <v-text-field
-                                    v-model="emailForm.phone"
-                                    label="Phone"
-                                    placeholder="Phone"
-                                    single-line
-                                    solo
-                            ></v-text-field>
-                            <v-textarea
-                                    solo
-                                    v-model="emailForm.situation"
-                                    name="Situation"
-                                    placeholder="Situation, Background, Status of Your Case"
-                            ></v-textarea>
-                            <v-textarea
-                                    solo
-                                    v-model="emailForm.legalaid"
-                                    name="LegalAid"
-                                    placeholder="Have you called legal aid to find out if you are eligible?"
-                            ></v-textarea>
-                            <v-alert
-                                    v-if="formSuccess === 'success'"
-                                    dense
-                                    text
-                                    type="success">
-                                Message was successfully sent!
-                            </v-alert>
-                            <v-alert
-                                    v-if="formSuccess === 'error'"
-                                    dense
-                                    text
-                                    type="error">
-                                Message was not successful, please try again later!
-                            </v-alert>
-
-                            <v-btn class="mr-4" color="#e99c46" @click="submit">submit</v-btn>
-                        </v-form>
+              
                     </div>
                 </template>
             </div>
